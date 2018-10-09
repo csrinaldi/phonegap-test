@@ -37,24 +37,22 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        /*var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-        */
-       console.log(id);
-       try {
+         try {
             TesseractPlugin.loadLanguage("eng", function(response) {
-                console.log(response);
+                var parentElement = document.getElementById(id);
+                var listeningElement = parentElement.querySelector('.listening');
+                var receivedElement = parentElement.querySelector('.received');
+
+                listeningElement.setAttribute('style', 'display:none;');
+                receivedElement.setAttribute('style', 'display:block;');
             }, function(reason) {
+                var error = parentElement.querySelector('.error');
+                error.setAttribute('style', 'display:block;');
                 console.log('Error on loading OCR file for your language. ' + reason);
             });
-        }catch(error) {
+         }catch(error) {
             console.log(error)
-        }
+         }
+       }
     }
 };
