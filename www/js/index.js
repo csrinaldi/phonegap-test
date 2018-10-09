@@ -37,9 +37,9 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
          try {
             TesseractPlugin.loadLanguage("eng", function(response) {
-                var parentElement = document.getElementById(id);
                 var listeningElement = parentElement.querySelector('.listening');
                 var receivedElement = parentElement.querySelector('.received');
 
@@ -48,10 +48,13 @@ var app = {
             }, function(reason) {
                 var error = parentElement.querySelector('.error');
                 error.setAttribute('style', 'display:block;');
+                error.innerHTML = reason;
                 console.log('Error on loading OCR file for your language. ' + reason);
             });
          }catch(error) {
-            console.log(error)
+             var error = parentElement.querySelector('.error');
+             error.setAttribute('style', 'display:block;');
+             error.innerHTML = error;
          }
        }
     }
