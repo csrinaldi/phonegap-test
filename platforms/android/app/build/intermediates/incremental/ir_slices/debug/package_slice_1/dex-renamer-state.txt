@@ -1,0 +1,4 @@
+#Wed Oct 10 16:56:49 ART 2018
+base.0=/usr/local/desarrollo/projects/hipokrates/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
