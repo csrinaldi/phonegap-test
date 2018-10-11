@@ -64,6 +64,7 @@ var app = {
 
         var statusOCR = "OCR ";
 
+        try {
         if (textocr) {
             ocrElement.innerText = statusOCR + " ONLINE";
             $("#recognizerAction").css({ 'display': "block" });
@@ -72,6 +73,9 @@ var app = {
             });
         } else {
             ocrElement.innerText = statusOCR + " OFFLINE";
+        }
+        }catch(error){
+            alert(error);
         }
 
         console.log('Received Event: ' + id);
