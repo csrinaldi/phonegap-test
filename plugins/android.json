@@ -13,9 +13,6 @@
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.logikas.hipokrates"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.logikas.hipokrates"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.logikas.hipokrates"
     },
@@ -31,13 +28,16 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.logikas.hipokrates"
     },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.logikas.hipokrates"
+    },
+    "cordova-plugin-mobile-ocr": {
+      "PACKAGE_NAME": "com.logikas.hipokrates"
+    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.logikas.hipokrates"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.logikas.hipokrates"
-    },
-    "cordova-plugin-mobile-ocr": {
       "PACKAGE_NAME": "com.logikas.hipokrates"
     }
   },

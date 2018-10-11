@@ -1,0 +1,4 @@
+#Thu Oct 11 18:29:31 ART 2018
+base.0=/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/9
+renamed.0=classes.dex
+file.0=/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/9/classes.dex
