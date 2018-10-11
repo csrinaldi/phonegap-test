@@ -59,12 +59,6 @@ var app = {
         var receivedElement = parentElement.querySelector('.received');
         var ocrElement = parentElement.querySelector('.ocr');
 
-
-
-        $("#recognizerAction").click( function() {
-            alert("HOLA");
-        });
-
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
@@ -72,8 +66,10 @@ var app = {
 
         if (textocr) {
             ocrElement.innerText = statusOCR + " ONLINE";
-            // buttonElement.setAttribute("style", 'display:block;');
-
+            $("#recognizerAction").css({ 'display': "block" });
+            $("#recognizerAction").click( function(event) {
+                app.onClick(event)
+            });
         } else {
             ocrElement.innerText = statusOCR + " OFFLINE";
         }
@@ -91,7 +87,9 @@ var app = {
     },
 
     onOCRSuccess: function (text) {
-        alert(text, "Texto Reconocido");
+
+        $(".textRecognized").innerText = text
+
     },
 
     onOCRFail: function (error) {
