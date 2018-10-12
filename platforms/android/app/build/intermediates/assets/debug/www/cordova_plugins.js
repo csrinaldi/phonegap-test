@@ -377,6 +377,14 @@ module.exports = [
       "navigator.notification",
       "navigator"
     ]
+  },
+  {
+    "id": "cordova-plugin-tesseract.TesseractPlugin",
+    "file": "plugins/cordova-plugin-tesseract/www/tesseractPlugin.js",
+    "pluginId": "cordova-plugin-tesseract",
+    "clobbers": [
+      "TesseractPlugin"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -393,7 +401,8 @@ module.exports.metadata =
   "cordova-plugin-media-capture": "1.4.3",
   "cordova-plugin-mobile-ocr": "1.0.1",
   "cordova-plugin-network-information": "1.3.4",
-  "cordova-plugin-vibration": "2.1.6"
+  "cordova-plugin-vibration": "2.1.6",
+  "cordova-plugin-tesseract": "0.0.1"
 };
 // BOTTOM OF METADATA
 });

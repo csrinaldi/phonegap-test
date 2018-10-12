@@ -17,6 +17,14 @@
  * under the License.
  */
 var app = {
+
+    options: {
+        quality: 100,
+        correctOrientation: true,
+        destinationType: Camera.DestinationType.FILE_URI
+    },
+
+
     // Application Constructor
     initialize: function () {
         this.bindEvents();
@@ -43,13 +51,7 @@ var app = {
             return;
         }
 
-        var options = {
-            quality: 100,
-            correctOrientation: true,
-            destinationType: Camera.DestinationType.FILE_URI
-        };
-
-        navigator.camera.getPicture(app.onCameraSuccess, app.onCameraFail, options);
+        navigator.camera.getPicture(app.onCameraSuccess, app.onCameraFail, app.options);
     },
 
     // Update DOM on a Received Event
@@ -57,7 +59,6 @@ var app = {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-        var ocrElement = parentElement.querySelector('.ocr');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
@@ -66,13 +67,32 @@ var app = {
 
         try {
             if (textocr) {
-                ocrElement.innerText = statusOCR + " ONLINE";
+                $("#ocr").text(statusOCR + " ONLINE");
                 $("#recognizerAction").css({ 'display': "block" });
                 $("#recognizerAction").click( function(event) {
                     app.onClick(event)
                 });
             } else {
-                ocrElement.innerText = statusOCR + " OFFLINE";
+                $("#ocr").text(statusOCR + " OFFLINE");
+            }
+        }catch(error){
+            alert(error);
+        }
+        try {
+            if (TesseractPlugin) {
+               /* TesseractPlugin.loadLanguage("eng", function(response) {
+                    $("#tesseract").text(statusOCR + " TESSERACT ONLINE");
+                    $("#recognizerTesseractAction").css({ 'display': "block" });
+                    $("#recognizerTesseractAction").click( function(event) {
+                        navigator.camera.getPicture(app.onCameraTesseractSuccess, app.onCameraFail, app.options);                     
+                    });
+                 }, function(reason) {
+                    $("#tesseract").text(statusOCR + " OFFLINE");
+                    alert('Error on loading OCR file for your language. ' + reason);
+                 });*/
+                
+            } else {
+                $("#tesseract").text(statusOCR + " OFFLINE");
             }
         }catch(error){
             alert(error);
@@ -85,6 +105,14 @@ var app = {
         textocr.recText(0, 3, imgData, app.onOCRSuccess, app.onOCRFail);
     },
 
+    onCameraTesseractSuccess: function(imgData) {
+        TesseractPlugin.recognizeText(imgData, "eng", function(recognizedText) {
+            $(".textTesseractRecognized").text(recognizedText);
+          }, function(reason) {
+                alert('Error on recognizing text from image. ' + reason);
+          });
+    },
+
     onCameraFail: function (error) {
         alert(error, "Error");
     },
@@ -92,6 +120,7 @@ var app = {
     onOCRSuccess: function (text) {
 
         $(".textRecognized").text(text);
+        
 
     },
 

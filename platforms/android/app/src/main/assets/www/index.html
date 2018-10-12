@@ -48,11 +48,20 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
-            <p class="event ocr"></p>
-            <button id="recognizerAction"  style="margin-left: 30px; margin-top: 15px; display: none">Reconocer</button>
+            <p id="ocr" class="event ocr"></p>
+            <p id="tesseract" class="event ocr"></p>
+            <button id="recognizerAction"  style="margin-left: 30px; margin-top: 15px; display: none">Scan with OCR</button>
+            <p>Text ....</p>
             <p class="textRecognized">
 
             </p>
+            <button id="recognizerTesseractAction"  style="margin-left: 30px; margin-top: 15px; display: none">Scan with OCR</button>
+            <p>Text ....</p>
+            <p class="textTesseractRecognized">
+
+            </p>
+
+
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>

@@ -102,5 +102,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-tesseract": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/gustavomazzoni/cordova-plugin-tesseract"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

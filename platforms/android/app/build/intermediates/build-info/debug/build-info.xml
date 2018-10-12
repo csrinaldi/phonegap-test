@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1539295763423"
+    timestamp="1539302797805"
     token="-8621584828929480144"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,23 +29,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1539293276404"
+        timestamp="1539302580325"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
         <artifact
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
@@ -56,13 +41,28 @@
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1539295763423"
+        timestamp="1539302797805"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/outputs/apk/debug/app-debug.apk"

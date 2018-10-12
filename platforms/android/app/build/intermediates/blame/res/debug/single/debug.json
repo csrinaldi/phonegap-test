@@ -28,12 +28,12 @@
         "source": "/home/cristian/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/be34a1c2141561a7ac6c9e3525d135d0/res/drawable-mdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
-        "source": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/src/main/res/mipmap-hdpi/icon.png"
-    },
-    {
         "merged": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-mdpi_screen.png.flat",
         "source": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png"
+    },
+    {
+        "merged": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
+        "source": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/src/main/res/mipmap-hdpi/icon.png"
     },
     {
         "merged": "/home/cristian/proyectos/mobile/phonegap-test/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
